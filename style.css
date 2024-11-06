@@ -1,0 +1,77 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
+    color: #333;
+}
+
+.social-links a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 1.5em;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+/* Lists */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.project-item, .education-item, .extra-item {
+    margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+}
