@@ -1,77 +1,108 @@
-/* Global Styles */
-body {
-    font-family: Arial, sans-serif;
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f7fa;
     color: #333;
+    line-height: 1.6;
 }
 
 .container {
-    width: 80%;
+    width: 90%;
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    background: #fff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.container:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 /* Header */
-header {
+.header {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
-header h1 {
-    font-size: 2em;
-    margin: 0;
-    color: #333;
+.header h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #1a73e8;
+}
+
+.header p {
+    color: #666;
+}
+
+.contact-info {
+    font-size: 1em;
+    color: #444;
 }
 
 .social-links a {
-    color: #007bff;
+    color: #1a73e8;
+    margin: 0 10px;
     text-decoration: none;
-    margin: 0 5px;
+    font-weight: bold;
 }
 
 .social-links a:hover {
     text-decoration: underline;
 }
 
-/* Section Styles */
-section {
-    margin-bottom: 20px;
+/* Sections */
+.section {
+    margin-bottom: 25px;
 }
 
-section h2 {
-    font-size: 1.5em;
-    border-bottom: 2px solid #007bff;
-    padding-bottom: 5px;
+.section h2 {
+    font-size: 1.8em;
+    color: #1a73e8;
+    border-left: 4px solid #1a73e8;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+.card {
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 15px;
     margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: scale(1.02);
 }
 
 /* Lists */
-ul {
+.skills-list, .section ul {
     list-style-type: none;
     padding-left: 0;
 }
 
-ul li {
+.skills-list li {
     margin-bottom: 10px;
-}
-
-.project-item, .education-item, .extra-item {
-    margin-bottom: 15px;
+    font-size: 1em;
 }
 
 /* Responsive Design */
 @media (max-width: 600px) {
-    .container {
-        width: 90%;
-        padding: 15px;
+    .header h1 {
+        font-size: 2em;
     }
 
-    header h1 {
-        font-size: 1.8em;
+    .section h2 {
+        font-size: 1.5em;
     }
 }
