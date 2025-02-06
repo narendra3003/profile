@@ -62,39 +62,97 @@ nav {
   color: #ff7f50; /* Orange color for hover effect */
 }
 
-/* Header Section */
-header {
-  background-color: #fff;
-  padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  margin-bottom: 60px; /* Gives space below the header */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
-header h1 {
-  font-size: 36px;
+.bg-light {
+  background-color: #f8f9fa;
+  padding: 30px;
+}
+
+.header-container {
+  display: flex;
+  max-width: 1000px;
+  margin: auto;
+  align-items: center;
+}
+
+/* Left Section: Profile Picture */
+.profile-section {
+  flex: 0 0 30%;
+  display: flex;
+  justify-content: flex-start; /* Pushes image to the left */
+  padding-left: 20px; /* Added padding to move image left */
+}
+
+.profile-section img {
+  width: 160px; /* Increased size */
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #007bff; /* Slightly thicker border */
+}
+
+/* Right Section: Contact Information */
+.contact-section {
+  flex: 0 0 70%; /* Ensures it starts after 30% width */
+  text-align: left;
+  padding-left: 30px; /* More space between image and text */
+}
+
+.contact-section h1 {
+  margin: 0;
+  font-size: 28px; /* Slightly larger font */
   color: #333;
 }
 
-header p {
-  font-size: 16px;
-  color: #666;
+.contact-section p {
+  margin: 10px 0;
+  font-size: 18px; /* Increased font size */
+  color: #555;
 }
 
-header a {
-  color: #ff7f50;
+.contact-section a {
   text-decoration: none;
+  color: #007bff;
   font-weight: bold;
-  transition: color 0.3s ease;
 }
 
-header a:hover {
-  color: #ff4500;
+.contact-section img {
+  width: 35px; /* Slightly bigger icons */
+  height: 35px;
+  margin-right: 12px;
+  vertical-align: middle;
+  transition: transform 0.3s;
 }
 
-header i {
-  margin-right: 8px;
+.contact-section img:hover {
+  transform: scale(1.1);
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header-container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .profile-section {
+      flex: 0 0 100%;
+      justify-content: center; /* Centers image on small screens */
+      padding-left: 0;
+      margin-bottom: 15px;
+  }
+
+  .contact-section {
+      flex: 0 0 100%;
+      padding-left: 0;
+  }
+}
+
+
 
 /* Main content section */
 .main-content {
